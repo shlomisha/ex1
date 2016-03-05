@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip Calculator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBillAmount"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Bill Amount:" />
+
+            <EditText
+                android:id="@+id/edtBillAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="0.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTipPercentage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Tip percentage:" />
+
+            <EditText
+                android:id="@+id/edtTipPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="0.00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/chkRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round (up) to nearest NIS" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate!" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tip:" />
+
+        <TextView
+            android:id="@+id/txtTipResult"
+            style="@style/Output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
